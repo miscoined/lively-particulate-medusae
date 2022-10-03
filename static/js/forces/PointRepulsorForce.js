@@ -1,4 +1,3 @@
-var PMath = Particulate.Math;
 App.PointRepulsorForce = PointRepulsorForce;
 
 function PointRepulsorForce(position, opts) {
@@ -28,11 +27,9 @@ PointRepulsorForce.prototype.applyForce = function (ix, f0, p0, p1) {
   var dz = p0[iz] - v0[2];
 
   var dist = dx * dx + dy * dy + dz * dz;
-  var diff = PMath.clamp(0.001, 100,
-    dist - this._radius2 * this.intensity);
+  var diff = Math.min(Math.max(dist - this._radius2 * this.intensity, 0.001), 100);
   var diffInv = 1 / diff;
-  var scale = PMath.clamp(0, 10,
-    diffInv * diffInv * diffInv);
+  var scale = Math.min(Math.max(diffInv * diffInv * diffInv, 0), 10);
 
   f0[ix] += dx * scale;
   f0[iy] += dy * scale;

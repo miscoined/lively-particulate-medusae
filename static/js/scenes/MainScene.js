@@ -1,4 +1,3 @@
-var PMath = Particulate.Math;
 var Tweens = App.Tweens;
 
 var ENABLE_ZOOM = true;
@@ -16,7 +15,7 @@ function MainScene() {
   this.raycaster = new THREE.Raycaster();
   this.nudgeIndex = 0;
 
-  this.pxRatio = PMath.clamp(1.5, 2, window.devicePixelRatio);
+  this.pxRatio = Math.min(Math.max(window.devicePixelRatio, 1.5), 2);
   this.gravity = -2;
 
   this.usePostFx = true;
