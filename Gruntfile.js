@@ -24,7 +24,7 @@ module.exports = function (grunt) {
     'jshint',
     'neuter',
     'notify',
-    'sass',
+    'dart-sass',
     'uglify',
     'watch'
   ].forEach(function (key) {
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
     'shaderChunks',
 
     // CSS
-    'sass:develop',
+    'dart-sass:develop',
     'autoprefixer:develop',
 
     // HTML
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
     'uglify',
 
     // CSS
-    'sass:build',
+    'dart-sass:build',
     'autoprefixer:build',
 
     // HTML

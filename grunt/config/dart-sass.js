@@ -1,11 +1,18 @@
 /*jshint node:true*/
 'use strict';
 
-// https://github.com/sindresorhus/grunt-sass
+// https://github.com/laurenhamel/grunt-dart-sass
 
-// Compile Sass to CSS using node-sass.
+// Compile Sass to CSS using dart-sass.
 
 module.exports = function (config) {
+  var files = [{
+        expand: true,
+        cwd : config.source + 'scss/',
+        src: '*.scss',
+        dest: '.temp/css/',
+        ext: '.css'
+      }];
   return {
     options: {
       includePaths: [
@@ -13,19 +20,13 @@ module.exports = function (config) {
       ]
     },
     build: {
-      files : [{
-        expand: true,
-        cwd : config.source + 'scss/',
-        src: '*.scss',
-        dest: '.temp/css/',
-        ext: '.css'
-      }],
+      files : files,
       options : {
         outputStyle : 'compressed'
       }
     },
     develop: {
-      files : '<%= sass.build.files %>',
+      files : files,
       options : {
         sourceComments : 'map'
       }
