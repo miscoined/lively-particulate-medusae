@@ -10,19 +10,19 @@ module.exports = function (config) {
     develop : {
       engine: 'swig',
       src: config.pages,
-      dest: './',
+      dest: config.deploy,
       data : {
         TEMPLATE_DEBUG : true,
-        STATIC_URL : config.static
+        STATIC_URL : config.source
       }
     },
     build : {
       engine: 'swig',
       src: config.pages,
-      dest: './',
+      dest: config.deploy,
       data : {
         TEMPLATE_DEBUG : false,
-        STATIC_URL : config.static
+        STATIC_URL : config.source
       }
     }
   };

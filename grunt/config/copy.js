@@ -14,7 +14,8 @@ module.exports = function (config) {
         config.source + 'img/{,*/}*.{jpg,jpeg,png,webp,gif,ico}',
         config.source + 'audio/{,*/}*.{mp3,ogg,wav}',
         config.source + 'fonts/*',
-        config.source + 'lib/modernizr/modernizr.js'
+        config.source + 'lib/modernizr/modernizr.js',
+        './LivelyProperties.json'
       ],
       dest: config.deploy
     },
@@ -22,7 +23,7 @@ module.exports = function (config) {
       expand: true,
       src: [
         config.source + 'scss/**/*.scss',
-        config.source + 'lib/**/*.js'
+        config.source + 'lib/**/*.js',
       ],
       dest: config.deploy
     }
