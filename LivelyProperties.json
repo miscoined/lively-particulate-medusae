@@ -1,0 +1,47 @@
+{
+    "color-tentacles": {
+        "text": "Tentacle Color",
+        "type": "color",
+        "value": "#997299"
+    },
+    "color-hoodcontour": {
+        "text": "Hood Contour Color",
+        "type": "color",
+        "value": "#ffdde9"
+    },
+    "color-bellyprimary": {
+        "text": "Belly Primary Color",
+        "type": "color",
+        "value": "#e4bbee"
+    },
+    "color-bellysecondary": {
+        "text": "Belly Secondary Color",
+        "type": "color",
+        "value": "#241138"
+    },
+    "color-mouthprimary": {
+        "text": "Mouth Primary Color",
+        "type": "color",
+        "value": "#efa6f0"
+    },
+    "color-mouthsecondary": {
+        "text": "Mouth Secondary Color",
+        "type": "color",
+        "value": "#fa65ce"
+    },
+    "color-hoodprimary": {
+        "text": "Hood Primary Color",
+        "type": "color",
+        "value": "#ffa9d2"
+    },
+    "color-hoodsecondary": {
+        "text": "Hood Secondary Color",
+        "type": "color",
+        "value": "#70256c"
+    },
+    "color-hoodtertiary": {
+        "text": "Hood Tertiary Color",
+        "type": "color",
+        "value": "#415ab5"
+    }
+}

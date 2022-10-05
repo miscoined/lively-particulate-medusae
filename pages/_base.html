@@ -112,6 +112,14 @@
     {% endif %}
     <script>
       App.STATIC_URL = "{{ STATIC_URL }}";
+
+      function livelyPropertyListener(name, val) {
+        var toggle = document.getElementById(name);
+        if (toggle != null) {
+          toll.value = val;
+          toggle.dispatchEvent(new Event('change'));
+        }
+      }
     </script>
   </body>
 </html>

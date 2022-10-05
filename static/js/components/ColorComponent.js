@@ -31,6 +31,7 @@ App.Dispatcher.extend(ColorComponent.prototype);
 
 ColorComponent.prototype.setLabel = function (label) {
   this._labelEl.textContent = label;
+  this._input.id = 'color-' + label.toLowerCase().replace(/ /g, '');
 };
 
 ColorComponent.prototype.setValue = function (value) {
