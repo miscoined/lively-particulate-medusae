@@ -1302,6 +1302,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+red-sass@~0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/red-sass/-/red-sass-0.2.1.tgz#ed9eae8d22b725e60554e54fcbd489f36f9e5b66"
+  integrity sha512-p1k+p0APUvKVgmcZzauHy8u21XOi4krFCHmgvq2BakEJjqpwSO+g5RbAxNbk7droX/bFE0KdW3v0X37HPftsEg==
+
 repeat-string@^1.5.2:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
