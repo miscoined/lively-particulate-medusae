@@ -8,16 +8,25 @@
 module.exports = function (config) {
   return {
     build: {
-      expand: true,
-      src: [
-        config.source + '.htaccess',
-        config.source + 'img/{,*/}*.{jpg,jpeg,png,webp,gif,ico}',
-        config.source + 'audio/{,*/}*.{mp3,ogg,wav}',
-        config.source + 'fonts/*',
-        config.source + 'lib/modernizr/modernizr.js',
-        './LivelyProperties.json'
-      ],
-      dest: config.deploy
+      files: [
+        {
+          expand: true,
+          src: ['**'],
+          dest: config.deploy + 'static/lib/three',
+          cwd: 'node_modules/three'
+        },
+        {
+          expand: true,
+          src: [
+            config.source + '.htaccess',
+            config.source + 'img/{,*/}*.{jpg,jpeg,png,webp,gif,ico}',
+            config.source + 'audio/{,*/}*.{mp3,ogg,wav}',
+            config.source + 'fonts/*',
+            './LivelyProperties.json'
+          ],
+          dest: config.deploy
+        }
+      ]
     },
     develop: {
       expand: true,

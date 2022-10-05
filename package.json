@@ -22,7 +22,6 @@
     "grunt-notify": "~0.4.3",
     "jit-grunt": "~0.9.1",
     "sass": "^1.55.0",
-    "shx": "*",
     "swig": "~1.4.2",
     "time-grunt": "~1.2.2"
   },
@@ -30,6 +29,6 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "postinstall": "bower install && shx cp -r node_modules/three static/lib/three"
+    "postinstall": "bower install"
   }
 }
